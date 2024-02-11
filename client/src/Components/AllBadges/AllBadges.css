@@ -1,0 +1,73 @@
+*{
+    font-family: 'Inter', sans-serif;
+  }
+
+  .profileimage1{
+    margin-top:62px;
+
+  }
+.rightrectanglebadge{
+    margin-top:1.2%;
+    border-radius:8px;
+    width: 70%;
+    margin-left:1%;
+    height: 76vh;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    background-color: rgba(255, 255, 255, 0.172);
+    
+    
+}  
+.firstbadge{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    padding:10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    background-color: rgba(255, 255, 255, 0.172);
+    border-radius: 8px;
+    margin-top:20px;
+    margin-left:10%;
+    width: 80%;
+    height: 20%;
+    color:white;
+}
+
+@media only screen and (max-width: 1100px) {
+    .container{
+      margin:3%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .leftrectangle {
+      width: 100%; /* Adjusted width for larger screens */
+      
+    }
+  
+    .rightrectanglebadge {
+      width: 100%; /* Adjusted width for larger screens */
+   
+    }
+    .badges{
+      width: 80%;
+    }
+    .logoutbtn{
+      width: 100%;
+    }
+    *{
+      font-size:20px;
+      font-family: 'Inter', sans-serif;
+    }
+    .name{
+      font-size:20px;
+    }
+    .email{
+      font-size: 15px;
+    }
+    .username{
+      font-size: 20px;
+    }
+  }

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+*{
+  font-family: 'Inter', sans-serif;
+ 
+}
+
+.container1{
+  display: flex;
+  
+  
+}
+   
+.leftrectangle1{
+  
+  margin:1%;
+  width: 20%;
+  height: 76vh;
+  border-radius: 15px;
+ 
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  background-color: rgba(255, 255, 255, 0.172);
+  
+
+ 
+}
+.title1{
+  
+  padding-top:43px;
+  color: #fbfafa;
+
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+.line1{
+ 
+  width: 80%;
+  margin:auto;
+  margin-top:43px;
+  border-radius: 15px;
+
+  height: 3px;
+  opacity: 0.4;
+  background: #131313;
+}
+
+.firstoption1{
+  width: 80%;
+  height: 40px;
+  /* background-color: red; */
+  margin: auto;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:33px;
+  font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border-radius: 10px;
+
+}
+
+.text1{
+    color:aliceblue;
+}
+
+.firstoption1:hover,
+.secondoption1:hover {
+  border-radius: 7px;
+  
+  background-color:rgba(255, 255, 255, 0.172);
+  
+  
+  cursor: pointer;
+}
+
+
+
+.secondoption1{
+  width: 80%;
+  height: 40px;
+  /* background-color: red; */
+  border-radius: 10px;
+  margin: auto;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:28px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.profileimage1{
+ 
+  margin-left:33%;
+ 
+  margin-top:122px;
+}
+
+.name1{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+font-style: normal;
+font-weight: 400;
+color:white;
+line-height: normal;
+}
+.email1{
+  color:white;
+  text-align:center;
+  
+  font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+.form1{
+  margin:2%;
+  height: 76vh;
+  
+  
+  
+}
+
+@media only screen and (max-width: 1150px) {
+  .container1{
+    margin:3%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .leftrectangle1 {
+    width: 100%; 
+    
+  }
+
+  .rightrectangle1 {
+    width: 100%; 
+    
+  }
+
+  *{
+    font-size:20px;
+    font-family: 'Inter', sans-serif;
+  }
+  .name1{
+    font-size:20px;
+  }
+  .email1{
+    font-size: 15px;
+  }
+  .form1{
+
+    width: 90%;
+    margin-top:70%;
+    
+  }
+}
