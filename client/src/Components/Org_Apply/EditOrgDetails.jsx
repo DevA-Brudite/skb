@@ -44,7 +44,7 @@ const [userData, setUserData] = useState([]);
       },
     };
     const response = await Axios.patch(
-      "http://127.0.0.1:8000/api/org/apply_for_issuer/",
+      "http://43.205.138.47:8000/api/org/apply_for_issuer/",
       formData,
       config
     );
@@ -58,7 +58,7 @@ const [userData, setUserData] = useState([]);
     const fetchUserData = async () => {
       try {
         const response = await Axios.get(
-          "http://127.0.0.1:8000/api/recipient/alluser/",
+          "http://43.205.138.47:8000/api/recipient/alluser/",
           {
             headers: {
               Authorization: `token ${localStorage.getItem('token')}`, // Replace with your authentication token

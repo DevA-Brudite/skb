@@ -33,7 +33,7 @@ const SignUpPage = () => {
         "Content-Type": "application/json",
       },
     };
-    await Axios.post("http://127.0.0.1:8000/api/auth/signup/", formData, config)
+    await Axios.post("http://43.205.138.47:8000/api/auth/signup/", formData, config)
       .then((response) => {
         console.log(response.data);
         if (response.data.message == "Successfully Registered.") {

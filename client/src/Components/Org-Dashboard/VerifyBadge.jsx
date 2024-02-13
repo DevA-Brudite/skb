@@ -20,7 +20,7 @@ const VerifyBadge = () => {
       try {
         console.log(unique_code.id);
         const response = await axios.get(
-          `http://127.0.0.1:8000/api/org/verify/?uvc=${unique_code.id}`
+          `http://43.205.138.47:8000/api/org/verify/?uvc=${unique_code.id}`
         );
         setData(response.data);
       } catch (error) {

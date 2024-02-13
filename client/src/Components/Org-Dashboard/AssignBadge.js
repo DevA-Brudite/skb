@@ -31,7 +31,7 @@ const AssignBadge = () => {
       },
     };
     const response = await Axios.post(
-      "http://127.0.0.1:8000/api/org/badge-assign/",
+      "http://43.205.138.47:8000/api/org/badge-assign/",
       formData,
       config
     );
@@ -42,7 +42,7 @@ const AssignBadge = () => {
     const fetchUserData = async () => {
       try {
         const response = await Axios.get(
-          "http://127.0.0.1:8000/api/recipient/alluser/",
+          "http://43.205.138.47:8000/api/recipient/alluser/",
           {
             headers: {
               Authorization: `token ${localStorage.getItem('token')}`, // Replace with your authentication token

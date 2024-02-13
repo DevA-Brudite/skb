@@ -38,7 +38,7 @@ const CreateBadge = () => {
       },
     };
      try {
-      const response = await Axios.post("http://127.0.0.1:8000/api/org/crud/", formData, config);
+      const response = await Axios.post("http://43.205.138.47:8000/api/org/crud/", formData, config);
       console.log(response);
       setIsCreateBadge(true);
     } catch (error) {
@@ -51,7 +51,7 @@ const CreateBadge = () => {
     const fetchUserData = async () => {
       try {
         const response = await Axios.get(
-          "http://127.0.0.1:8000/api/recipient/alluser/",
+          "http://43.205.138.47:8000/api/recipient/alluser/",
           {
             headers: {
               Authorization: `token ${localStorage.getItem('token')}`, // Replace with your authentication token

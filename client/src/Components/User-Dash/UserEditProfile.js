@@ -20,7 +20,7 @@ const UserEditProfile = () => {
   const handlePatchAPI = async () => {
     try {
       const response = await Axios.patch(
-        "http://127.0.0.1:8000/api/recipient/update-user/",
+        "http://43.205.138.47:8000/api/recipient/update-user/",
         {
           name: userData.name,
           contact_info: userData.contact_info,
@@ -44,7 +44,7 @@ const UserEditProfile = () => {
     const fetchUserData = async () => {
       try {
         const response = await Axios.get(
-          "http://127.0.0.1:8000/api/recipient/alluser/",
+          "http://43.205.138.47:8000/api/recipient/alluser/",
           {
             headers: {
               Authorization: `token ${localStorage.getItem("token")}`, // Replace with your authentication token

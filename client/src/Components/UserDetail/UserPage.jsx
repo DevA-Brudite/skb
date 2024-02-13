@@ -23,7 +23,7 @@ function UserPage() {
     const fetchBadgeData = async () => {
       try {
         const response = await Axios.get(
-          "http://127.0.0.1:8000/api/recipient/allbadges/",
+          "http://43.205.138.47:8000/api/recipient/allbadges/",
           {
             headers: {
               Authorization: `token ${localStorage.getItem('token')}` , // Replace with your authentication token
@@ -46,7 +46,7 @@ function UserPage() {
     const fetchUserData = async () => {
       try {
         const response = await Axios.get(
-          "http://127.0.0.1:8000/api/recipient/alluser/",
+          "http://43.205.138.47:8000/api/recipient/alluser/",
           {
             headers: {
               Authorization: `token ${localStorage.getItem('token')}`, // Replace with your authentication token
@@ -177,7 +177,7 @@ function UserPage() {
               >
                 <img
                   className="object-fit  h-38 w-38 my-4"
-                  src={`http://127.0.0.1:8000${badge.image_url}`}
+                  src={`http://43.205.138.47:8000${badge.image_url}`}
                   alt={`badge_${index}`}
                   width={"180px"}
                   height={"180px"}

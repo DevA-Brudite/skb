@@ -26,7 +26,7 @@ const Badge = () => {
       },
     };
     const response = await Axios.patch(
-      "http://127.0.0.1:8000/api/org/badge-assign/",
+      "http://43.205.138.47:8000/api/org/badge-assign/",
       formData,
       config
     );

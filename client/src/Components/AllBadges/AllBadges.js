@@ -16,7 +16,7 @@ const AllBadges = () => {
     const fetchUserData = async () => {
       try {
         const response = await Axios.get(
-          "http://127.0.0.1:8000/api/org/crud/",
+          "http://43.205.138.47:8000/api/org/crud/",
           {
             headers: {
               Authorization: `token ${localStorage.getItem("token")}`, // Replace with your authentication token
@@ -41,7 +41,7 @@ const AllBadges = () => {
   const handleDeleteBadge = async (badgeId) => {
     try {
       await Axios.delete(
-        `http://127.0.0.1:8000/api/org/crud/?badge_id=${badgeId}`,
+        `http://43.205.138.47:8000/api/org/crud/?badge_id=${badgeId}`,
         {
           headers: {
             Authorization: `token ${localStorage.getItem("token")}`,
@@ -62,7 +62,7 @@ const AllBadges = () => {
     const UserData = async () => {
       try {
         const response = await Axios.get(
-          "http://127.0.0.1:8000/api/recipient/alluser/",
+          "http://43.205.138.47:8000/api/recipient/alluser/",
           {
             headers: {
               Authorization: `token ${localStorage.getItem("token")}`, // Replace with your authentication token
@@ -169,7 +169,7 @@ const AllBadges = () => {
             >
               <img
                 className="badgeimage -mx-12 max-lg:w-3/4  p-2 max-lg:h-3/4"
-                src={`http://127.0.0.1:8000/media${badge.image_url}`}
+                src={`http://43.205.138.47:8000/media${badge.image_url}`}
                 alt={`badge_${index}`}
                 width={"140px"}
                 height={"160px"}

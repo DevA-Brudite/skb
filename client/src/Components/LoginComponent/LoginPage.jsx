@@ -30,7 +30,7 @@ const LoginPage = () => {
       },
     };
     const response = await Axios.post(
-      "http://127.0.0.1:8000/api/auth/login/",
+      "http://43.205.138.47:8000/api/auth/login/",
       formData,
       config
     );

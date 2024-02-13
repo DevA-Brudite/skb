@@ -40,7 +40,7 @@ const [showSuccessPopup, setShowSuccessPopup] = useState(false); // New state
       },
     };
     const response = await Axios.patch(
-      "http://127.0.0.1:8000/api/org/apply_for_org/",
+      "http://43.205.138.47:8000/api/org/apply_for_org/",
       formData,
       config
     );
